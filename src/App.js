@@ -386,7 +386,6 @@ function App() {
                 svgImage.height = previewSize;
                 document.body.appendChild(svgImage);
                 svgImage.onload = () => {
-                  console.log('onload')
                   const canvas = document.createElement("canvas");
                   canvas.width = svgImage.clientWidth;
                   canvas.height = svgImage.clientHeight;
@@ -405,7 +404,6 @@ function App() {
                     type: "image/svg+xml",
                   })
                 );
-                console.log(svgImage.src)
               }}
             >
               download
