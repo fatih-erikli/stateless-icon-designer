@@ -1,38 +1,84 @@
-.App {
+body {
+  background-color: silver;
+  font-family: Helvetica, sans-serif;
+}
+
+.app-container {
+  margin: 2em;
+}
+
+.canvas {
+  background-color: white;
+}
+
+.editor {
+  width: 512px;
+  float: left;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2.5em;
+}
+
+h3 {
+  background-color: gray;
+  padding: 0.5em;
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: normal;
+  float: left;
+}
+
+.preview {
+  float: left;
+}
+
+.preview-square {
+  float: left;
+  margin-left: 1em;
+}
+
+.drawing-info {
+  color: silver;
+}
+
+h1 {
+  clear: both;
+}
+
+.segment:hover {
+  fill: red;
+}
+
+.download-link {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.download-link:hover {
+  color: black;
+}
+
+h1 a {
+  color: black;
+}
+
+h1 a:hover {
+  color: blue;
+}
+
+p, ul, footer {
+  font-size: 1.4em;
+}
+
+h1, ul, p, footer {
+  width: 900px;
+  margin: 1em auto 0.2em;
+}
+
+footer {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 2em;
 }
